@@ -1,0 +1,84 @@
+$font: 'Raleway', sans-serif;
+
+@import 'header';
+@import 'frame';
+@import 'previews';
+
+* {	
+  /* Universal reset */
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+ width: 100vw;
+ max-width: 100%;
+ font-family: $font;
+ color: #1d2d35;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0 30px;
+  background-color: #222;
+  box-shadow: 0 5px 10px #222;
+
+  & * { 
+    margin-right: 20px; 
+    color: white;
+  }
+
+  a { text-decoration: none; }
+
+  .active {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &:hover { border-bottom: 2px solid white; }
+  }
+
+  .inactive { color: lightgray; cursor: not-allowed; }
+}
+
+/*** PROJECT LIST ***/
+
+.projects-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
+
+  .project-info {
+    padding: 20px 0;
+    max-width: 900px;
+    margin-bottom: 10px;
+
+    .title { font-size: 1.5rem; margin-bottom: 8px; }
+
+    article { 
+      div  { padding-left: 20px; margin: 5px; }
+      span { color: blue; }
+      a    { display: flex; justify-content: flex-end; }
+    }
+  }
+
+  .divider {
+    height: 2px;
+    width: 60vw;
+    background-color: rgba(70, 131, 180, 0.2);
+    margin: 0 0 100px 0;
+  }
+}

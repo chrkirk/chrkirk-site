@@ -1,0 +1,68 @@
+$header-color: rgba(80, 45, 53, 1);
+$header-background: rgba(211, 211, 211, 0.2);
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 100%;
+  color: $header-color;
+  background-color: $header-background;
+  position: relative;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 30px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+  }
+
+  article {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+    position: absolute;
+    bottom: 100px;
+    transform: rotate(45deg);
+    animation-duration: 3s;
+    animation-name: fadeDown;
+    animation-iteration-count: infinite;  
+  }
+  
+  @keyframes fadeDown {
+    from { opacity: 1; }
+  
+    to {
+      transform: translateY(30px) rotate(45deg);
+      opacity: 0;
+    }
+  }
+}
+
+.logos-gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    object-fit: contain;
+    object-position: center;
+  }
+}

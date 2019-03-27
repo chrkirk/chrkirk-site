@@ -1,0 +1,221 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 100%;
+  color: #502d35;
+  background-color: rgba(211, 211, 211, 0.2);
+  position: relative;
+}
+header .title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+  padding-bottom: 30px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+header article {
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+header .arrow {
+  width: 40px;
+  height: 40px;
+  border-bottom: 5px solid red;
+  border-right: 5px solid red;
+  position: absolute;
+  bottom: 100px;
+  transform: rotate(45deg);
+  animation-duration: 3s;
+  animation-name: fadeDown;
+  animation-iteration-count: infinite;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(30px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.logos-gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.logos-gallery .logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  object-fit: contain;
+  object-position: center;
+}
+
+iframe {
+  display: flex;
+  width: 1500px;
+  transform: translateY(-80px) scale(0.8);
+  height: 800px;
+  border: 1px solid lightgray;
+  padding: 2px;
+  border-radius: 2px;
+  transition: width;
+  transition-duration: 1s;
+}
+
+/* Different frame sizes to display responsive design */
+.small-frame {
+  width: 500px;
+}
+
+.medium-frame {
+  width: 700px;
+}
+
+.large-frame {
+  width: 1500px;
+}
+
+.frame-controls {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  margin-bottom: 10px;
+}
+.frame-controls .control-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border: 1px solid lightgray;
+  margin: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.frame-controls .selected {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  iframe {
+    width: 100%;
+  }
+
+  .frame-controls {
+    display: none;
+  }
+}
+.previews {
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.previews img {
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.previews .phoneX-preview {
+  height: 600px;
+}
+.previews .phone5s-preview {
+  height: 516px;
+}
+
+* {
+  /* Universal reset */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #1d2d35;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0 30px;
+  background-color: #222;
+  box-shadow: 0 5px 10px #222;
+}
+nav * {
+  margin-right: 20px;
+  color: white;
+}
+nav a {
+  text-decoration: none;
+}
+nav .active {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+nav .active:hover {
+  border-bottom: 2px solid white;
+}
+nav .inactive {
+  color: lightgray;
+  cursor: not-allowed;
+}
+
+/*** PROJECT LIST ***/
+.projects-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 20vh;
+}
+.project .project-info {
+  padding: 20px 0;
+  max-width: 900px;
+  margin-bottom: 10px;
+}
+.project .project-info .title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.project .project-info article div {
+  padding-left: 20px;
+  margin: 5px;
+}
+.project .project-info article span {
+  color: blue;
+}
+.project .project-info article a {
+  display: flex;
+  justify-content: flex-end;
+}
+.project .divider {
+  height: 2px;
+  width: 60vw;
+  background-color: rgba(70, 131, 180, 0.2);
+  margin: 0 0 100px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

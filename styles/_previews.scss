@@ -1,0 +1,15 @@
+.previews {
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+
+  img {
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  // The ratio of iphoneXHeight/iphone5s = 0.86
+  .phoneX-preview  { height: 600px; }
+  .phone5s-preview { height: 516px; }
+}

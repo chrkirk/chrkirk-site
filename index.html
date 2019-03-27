@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="./icons/baseline_directions_run_black_18dp.png">
+  <title>Christos Kirkos</title>
+</head>
+<body>
+  <nav>
+    <a id="name">Christos Kirkos</a>
+    <a class="active" href="">Portfolio</a>
+    <a class="inactive" class="wip" href="">About</a>
+  </nav>
+  <header>
+    <div class="title">Portfolio</div>
+    <div class="logos-gallery">
+      <img class="logo" src="./images/apple_logo.png" alt="apple_logo">
+      <img class="logo" src="./images/chrome_logo.png" alt="chrome_logo">
+      <img class="logo" src="./images/firefox_logo.png" alt="firefox_logo">
+      <img class="logo" src="./images/safari_logo.png" alt="safari_logo">
+    </div>
+    <article>
+      Below are some of some of my web/ios projects.
+    </article>
+    <div class="arrow"></div>
+  </header>
+
+  <div class="projects-list">
+
+    <div class="project" id='receptionist'>
+      <div class="project-info">
+        <div class="title">Receptionist</div>
+        <article>
+          A login guide for ios inspired by Netflix's app. The design is responsive and consistent across all devices (without storyboards). Features:
+          <div>When the keyboard hides any of the views, the view controller becomes scrollable, this can be seen on the iphone 5s example below.</div>
+          <div>The form buttons are unclickable and have dimmed color until all the fields are filled.</div>
+          <a href="https://github.com/chrkirk/receptionist">Github</a>
+        </article>
+      </div>
+      <div class="previews">
+        <img class="phoneX-preview" src="./images/receptionist_iphoneX.gif" alt="receptionist_iphoneX">
+        <img class="phone5s-preview" src="./images/receptionist_iphone5s.gif" alt="receptionist_iphone5s">
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div class="project">
+      <div class="project-info">
+        <div class="title">Fancy login</div>
+        <article>This is a login + registration view interaction build with <span>React</span> and <span>Sass</span>. The view is displayed like a stack with a login form on the front and a registration form on the back. Click CREATE ACCOUNT to see the interaction. Features:
+          <div>Password inputs have a visibility switch.</div>
+          <div>When a form button is pressed if there are empty fields an error message will appear.</div>
+          <a href="https://chrkirk.github.io/fancy_login/">Github</a>
+        </article>
+      </div>
+      <iframe src="https://chrkirk.github.io/fancy_login/" frameborder="0"></iframe>
+      <div class="divider"></div>
+    </div>
+
+    <div class="project">
+      <div class="project-info">
+        <div class="title">Realty cat</div>
+        <article>A layout for an interior design blog, build with <span>Node</span>. Click on the size buttons to test different screen sizes. Features:
+          <div>Drop down navigation bar for small screens (press +)</div>
+          <div>Fade out images transitions (press the arrow buttons) </div>
+          <a href="https://realty-cat.herokuapp.com/">Github</a>
+        </article>
+      </div>
+      <div class="frame-controls">
+        <div class="control-item mobile">Mobile</div>
+        <div class="control-item tablet">Tablet</div>
+        <div class="control-item desktop selected">Desktop</div>
+      </div>
+      <iframe src="https://realty-cat.herokuapp.com/" frameborder="0"></iframe>
+      <div class="divider"></div>
+    </div>
+
+    <div class="project">
+      <div class="project-info">
+        <div class="title">Apod viewer</div>
+        <article>This is an app for viewing NASA's astronomy photos build with <span>Node</span>. It used NASA's API to fetch images and metadata. Click on the size buttons to test different screen sizes.
+          <a href="https://apod-viewer-app.herokuapp.com/">Github</a>
+        </article>
+      </div>
+      <div class="frame-controls">
+        <div class="control-item mobile">Mobile</div>
+        <div class="control-item tablet">Tablet</div>
+        <div class="control-item desktop selected">Desktop</div>
+      </div>
+      <iframe src="https://apod-viewer-app.herokuapp.com/" frameborder="0"></iframe>
+      <div class="divider"></div>
+    </div>
+    
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
