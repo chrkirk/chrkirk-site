@@ -41,6 +41,6 @@ iframe {
 
 // The max size of an iframe width * scaleFactor = 1200px
 @media (max-width: 1300px) {
-  iframe { width: 100%; }
+  iframe { width: 120%; }   // because it was scaled down to 0.8 of the original width 
   .frame-controls { display: none; }
 }

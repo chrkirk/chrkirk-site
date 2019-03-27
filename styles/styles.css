@@ -60,6 +60,15 @@ header .arrow {
   object-position: center;
 }
 
+@media (max-width: 500px) {
+  header .title {
+    font-size: 3rem;
+  }
+
+  header article {
+    font-size: 1.5rem;
+  }
+}
 iframe {
   display: flex;
   width: 1500px;
@@ -109,7 +118,7 @@ iframe {
 
 @media (max-width: 1300px) {
   iframe {
-    width: 100%;
+    width: 120%;
   }
 
   .frame-controls {
@@ -133,6 +142,16 @@ iframe {
   height: 516px;
 }
 
+@media (max-width: 700px) {
+  .previews {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 500px) {
+  .previews {
+    transform: scale(0.6);
+  }
+}
 * {
   /* Universal reset */
   padding: 0;
@@ -175,6 +194,7 @@ nav .active:hover {
 nav .inactive {
   color: lightgray;
   cursor: not-allowed;
+  text-transform: uppercase;
 }
 
 /*** PROJECT LIST ***/
@@ -192,7 +212,7 @@ nav .inactive {
   min-height: 20vh;
 }
 .project .project-info {
-  padding: 20px 0;
+  padding: 20px;
   max-width: 900px;
   margin-bottom: 10px;
 }
@@ -216,6 +236,12 @@ nav .inactive {
   width: 60vw;
   background-color: rgba(70, 131, 180, 0.2);
   margin: 0 0 100px 0;
+}
+
+@media (max-width: 500px) {
+  .projects-list {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
